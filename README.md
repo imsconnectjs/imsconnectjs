@@ -13,6 +13,7 @@ Work is in progress - no code available yet.
 - [SSL options](#ssl-options)
 - [Terminating connections](#terminating-connections)
 - [Pooling connections](#pooling-connections)
+- [Todo](#todo)
 
 ## Install
 
@@ -142,14 +143,7 @@ information.
 
 ### SSL options
 
-The `ssl` option in the connection options takes a string or an object. When given a string,
-it uses one of the predefined SSL profiles included. The following profiles are included:
-
-* `"Amazon RDS"`: this profile is for connecting to an Amazon RDS server and contains the
-  certificates from https://rds.amazonaws.com/doc/rds-ssl-ca-cert.pem and
-  https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
-
-When connecting to other servers, you will need to provide an object of options, in the
+The `ssl` option in the connection options takes an object. When connecting to IMS Connect servers, you will need to provide an object of options, in the
 same format as [tls.createSecureContext](https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options).
 Please note the arguments expect a string of the certificate, not a file name to the
 certificate. Here is a simple example:
@@ -276,3 +270,8 @@ being taken from the top of the pool and returning to the bottom.
 
 When a previous connection is retrieved from the pool, a ping packet is sent
 to the server to check if the connection is still good.
+
+## Todo
+
+* Everything
+* Simplest case for calling an IMS transaction with Single Segment Message, Commit Mode 1, Synclevel None
