@@ -1,5 +1,6 @@
 # imsconnectjs
 node.js library to access IMS transactions through IMS Connect
+Work is in progress - no code available yet.
 
 ## Table of Contents
 
@@ -157,7 +158,7 @@ certificate. Here is a simple example:
 var connection = imsconnect.createConnection({
   host : 'localhost',
   ssl  : {
-    ca : fs.readFileSync(__dirname + '/mysql-ca.crt')
+    ca : fs.readFileSync(__dirname + '/imsconnect-ca.crt')
   }
 });
 ```
