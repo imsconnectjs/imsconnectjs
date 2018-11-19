@@ -1,5 +1,5 @@
 ---
-permalink: README.html
+permalink: index.html
 ---
 
 # imsconnectjs
