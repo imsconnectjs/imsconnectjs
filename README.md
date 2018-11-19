@@ -1,5 +1,8 @@
+---
+---
+
 # imsconnectjs
-node.js library to access IMS transactions through IMS Connect
+node.js library to access IMS transactions running in the IMS Transaction Manager (IMS TM) through IMS Connect
 Work is in progress - no code available yet.
 
 ## Table of Contents
